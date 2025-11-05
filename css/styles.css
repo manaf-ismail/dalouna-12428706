@@ -1,0 +1,306 @@
+/* Dalouna Restaurant Styles */
+/* 
+ css/styles.css 
+ Student Name: Manaf Ismail
+ Student Id: 12428706
+*/
+
+:root {
+    --bg: #faf7f2;
+    --text: hwb(0 12% 88%);
+    --muted: #6b6b6b;
+    --brand: #216869;
+    --brand-2: #49a078;
+    --card: #ffffff;
+    --border: #e9e3db;
+}
+
+body {
+    margin: 0;
+    font-family: "Rubik", sans-serif, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+    color: var(--text);
+    background: var(--bg);
+    line-height: 1.6;
+}
+
+/* NAVIGATION */
+a {
+    text-decoration: none;
+}
+ul li {
+    list-style-type: none;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    gap: 270px;
+}
+nav ul {
+    display: flex;
+    gap: 15px;
+}
+nav h2 {
+    color: var(--brand);
+    font-weight: 900;
+}
+#navlist li a {
+    color: var(--brand);
+    font-weight: 900;
+}
+#navlist {
+    padding-top: 10px;
+}
+
+/* HERO SECTION */
+.hero {
+    background-image: url(../images/bg.jpg);
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#aboveHeader {
+    background-color: var(--brand-2);
+    border-radius: 15px;
+    padding: 2px 7px;
+    width: fit-content;
+    color: var(--brand);
+    margin-bottom: -50px;
+}
+#content {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#Welcome {
+    color: var(--card);
+    font-size: 3em;
+    margin-bottom: -20px;
+}
+#ParaUnderWelc {
+    color: var(--card);
+    width: 65%;
+    font-size: 1.3em;
+    font-weight: 400;
+}
+#ButtonMenu {
+    background-color: var(--brand);
+    border-radius: 75px; 
+    padding: 20px 25px;
+    font-weight: 900;
+    color: var(--card);
+    border-style: none;
+}
+
+/* ABOUT SECTION */
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    padding-top: 50px;
+    padding-bottom: 80px;
+}
+#AboutUs, #chefsnote {
+    width: 24%;
+    border: 1px solid var(--muted);
+    border-radius: 25px;
+    padding: 10px;
+    background-color: var(--card);
+}
+#chefsnote {
+    height: 300px;
+}
+#IDontKnowWhatToNameIt {
+    display: flex;
+    gap: 30px;
+}
+#IDontKnowWhatToNameIt p {
+    border: 1px solid var(--muted);
+    border-radius: 25px;
+    padding: 7px;
+}
+
+/* MENU */
+#menuHeader {
+    padding-left: 185px;
+    font-weight: 900;
+}
+#menu2 {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+#Mezze, #Mains, #Drinks {
+    border: 1px solid var(--muted);
+    border-radius: 25px;
+    padding: 10px;
+    background-color: var(--card);
+    width: 25%;
+}
+.nameandprice {
+    display: flex;
+    justify-content: space-between;
+}
+.price {
+    font-weight: 900;
+    color: var(--brand);
+}
+#MenuFooter {
+    color: var(--muted);
+    padding-left: 185px;
+    padding-bottom: 80px;
+}
+
+/* HOURS & CONTACT */
+#hours {
+    display: flex;
+    justify-content: center; 
+    gap: 50px;
+    padding-bottom: 80px;
+}
+#HoursTable, #Contact {
+    width: 30%;
+    border: 1px solid var(--muted);
+    border-radius: 25px;
+    padding: 15px;
+    background-color: var(--card);
+}
+.Hours {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* FIND US */
+#find-us {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+#info, #mappp {
+    border: 1px solid var(--muted);
+    border-radius: 25px;
+    background-color: var(--card);
+    width: 30%;
+    padding: 10px;
+}
+
+/* FOOTER */
+#madeby {
+    display: flex;
+    justify-content: center;
+    color: var(--muted);
+    padding: 5px 0;
+}
+#madeby a {
+    color: var(--brand);
+}
+
+/* FLEX CONTAINER */
+.flexgrid {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+#mappp {
+    border: 1px solid var(--muted);
+    border-radius: 25px;
+    background-color: var(--card);
+    overflow: hidden; /* ensures image corners match the div */
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mappp img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* ensures image fills area without distortion */
+    border-radius: 25px;
+    display: block;
+}
+
+/* -------------------------------
+   RESPONSIVE DESIGN
+--------------------------------*/
+
+/* Tablets */
+@media (max-width: 1024px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    #about, #menu2, #hours, #find-us {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+    #AboutUs, #chefsnote, #Mezze, #Mains, #Drinks, #HoursTable, #Contact, #info  {
+        width: 80%;
+    }
+    
+    
+
+
+    #Welcome {
+        font-size: 2.2em;
+    }
+    #ParaUnderWelc {
+        width: 85%;
+    }
+}
+
+/* Mobile Phones */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav h2 {
+        font-size: 1.5em;
+    }
+    #Welcome {
+        font-size: 1.8em;
+    }
+    #ParaUnderWelc {
+        width: 90%;
+        font-size: 1em;
+    }
+    #ButtonMenu {
+        padding: 12px 20px;
+        font-size: 0.9em;
+    }
+    #menuHeader, #MenuFooter {
+        padding-left: 0;
+        text-align: center;
+    }
+}
+
+/* Small Phones */
+@media (max-width: 480px) {
+    #aboveHeader {
+        font-size: 0.9em;
+        margin-bottom: -20px;
+    }
+    #Welcome {
+        font-size: 1.4em;
+    }
+    #ParaUnderWelc {
+        font-size: 0.9em;
+    }
+    #about, #menu2, #hours, #find-us {
+        padding: 0 10px;
+    }
+    #AboutUs, #chefsnote, #Mezze, #Mains, #Drinks, #HoursTable, #Contact, #info, #mappp {
+        width: 100%;
+    }
+}
