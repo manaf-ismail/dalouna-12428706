@@ -1,0 +1,2 @@
+Manaf Ismail - 12428706 
+Dalouna Restaurant Website is a modern, responsive web page designed to showcase a Mediterranean–Palestinian restaurant. The site highlights the restaurant’s menu, hours, contact details, and location, all within a clean and elegant layout. Built using HTML5 and CSS3, it features semantic structure, flexible layouts, and responsive design through media queries, ensuring an optimal viewing experience across desktop, tablet, and mobile devices.
